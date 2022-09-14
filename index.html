@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Impervious API: Request Early Access to the Impervious Browser">
+    <meta name="theme-color" content="#000000"/>
+
+    <meta name="og:type" content="website"></meta>
+    <meta name="og:title" content="Impervious AI"></meta>
+    <meta name="og:image" content="https://www.impervious.ai/assets/imp-knight.png"></meta>
+    <meta name="og:url" content="https://impervious.ai/"></meta>
+    <meta name="og:description" content="Request Early Access to the Impervious Browser"></meta>
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:site" content="@imperviousai"></meta>
+    <meta name="twitter:creator" content="@imperviousai"></meta>
+    <meta name="twitter:title" content="Impervious AI"></meta>
+    <meta name="twitter:description" content="Request Early Access to the Impervious Browser"></meta>
+    <meta name="twitter:site" content="@imperviousai"></meta>
+    <meta name="twitter:image" content="https://www.impervious.ai/assets/imp-knight.png"></meta>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="/assets/main.bundle.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="assets/animation.css"
+/>
+    <link
+      rel="stylesheet"
+      href="assets/compiled-tailwind.min.css"
+/>
+    <script src="/assets/main.bundle.js" defer></script>
+    <script src="/assets/js/email-submit-form.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Impervious.ai</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <main>
+      
+      <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-opacity-0"
+    >
+  <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+    <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+      <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800"
+            href="/"
+            ><img
+                  alt="..."
+                  src=assets/twitter-banner.png
+                  class="rounded-full max-w-full mx-auto"
+                  style="max-width: 160px;"
+/></a
+          >
+      <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+        <i class="text-gray-800 fas fa-bars"></i>
+      </button>
+    </div>
+    <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+      <ul class="flex flex-col lg:flex-row list-none mr-auto">
+        <li class="flex items-center">
+          <a
+                class="lg:text-gray-800 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-s font-bold"
+                href="https://docs.impervious.ai/"
+                >
+                Documentation</a>
+        </li>
+      </ul>
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <li class="flex items-center text-gray-800 px-4 font-bold">
+          <a href="/team/">Team</a>
+        </li>
+        <li class="flex items-center text-gray-800 px-4 py-4 font-bold">
+          <a href="https://newsletter.impervious.ai/">Blog</a>
+        </li>
+        <li class="flex items-center text-gray-800 px-4 font-bold">
+          <a href="/contact">Contact Us</a>
+        </li>
+        <li class="flex items-center px-4">
+          <a
+                class="lg:text-gray-800 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://twitter.com/imperviousai"
+                >
+            <i
+                  class="lg:text-gray-800 text-gray-800 fab fa-twitter text-lg leading-lg "
+                ></i
+                >
+          </a
+              >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 45vh;"
+      >
+        
+<div
+    class="absolute top-0 w-full h-full bg-center bg-cover"
+></div>
+<div class="container relative mx-auto">
+  <div class="flex flex-wrap items-center mt-24">
+    <div class="w-full md:w-6/12 px-4 mr-auto ml-auto">
+      <h3 class="text-4xl mb-2 font-semibold leading-none text-gray-800">
+                Impervious API: Your portal to the p2p internet
+              </h3>
+      <p class="mt-4 text-lg text-gray-800 pb-8">
+                  Impervious API is a programmatic layer that sits on top of the Bitcoin Lightning Network, i.e. "Layer 3." Developers can leverage the Impervious API to easily build secure p2p data transmissions and payments into their applications and services.
+                </p>
+      <h3 class="text-xl mb-2 font-semibold leading-normal text-gray-800 pb-2">
+                1. Truly peer-to-peer (like the Internet was meant to be)
+                </h3>
+      <h3 class="text-xl mb-2 font-semibold leading-normal text-gray-800 pb-2">
+                2. Censorship and surveillance resistant 
+                </h3>
+      <h3 class="text-xl mb-2 font-semibold leading-normal text-gray-800 pb-2">
+                3. Default encrypted
+                </h3>
+      <h3 class="text-xl mb-2 font-semibold leading-normal text-gray-800 pb-4">
+                4. Payments built in
+                </h3>
+      <h3 class="text-3xl mb-2 font-semibold leading-normal text-gray-800 pb-4 pt-8">
+                 Request Early Access to the Impervious Browser
+                </h3>
+      <a href="https://impervious.ai/contact">
+        <button
+                        class="bg-red-600 text-white hover:bg-white hover:text-red-600 text-sm font-bold px-6 py-4 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                    >
+                        Request Access <i class="pl-2 fas fa-chevron-right text-l"></i>
+
+        </button>
+      </a>
+    </div>
+    <div class="w-full md:w-6/12 mr-auto ml-auto pt-8 px-4">
+      <img
+                  alt="..."
+                  src="assets/impervious_build_new-cropped.svg"
+                  class="w-full align-middle rounded-t-lg object-fill min-w-500"
+/>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="bg-white -mt-24 pt-4">
+<div class="container mx-auto px-4">
+    <div class="flex flex-wrap"></div>
+    <div class="flex flex-wrap items-center mt-32">
+        <div class="w-full md:w-4/12 mr-auto ml-auto pl-4 pb-16">
+            <h3 class="text-xl mb-2 font-semibold leading-normal text-red-600">
+        Impervious API
+        </h3>
+            <h3 class="text-2xl mb-2 font-semibold leading-normal pb-8">
+        We make it easy for developers to integrate cryptographically secure payments and data transfers - p2p - via IMP API.
+        </h3>
+            <a href="https://docs.impervious.ai/">
+                <button
+                class="bg-red-600 text-white hover:bg-white hover:text-red-600 text-sm font-bold px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+            >
+                Learn More <i class="pl-2 fas fa-chevron-right text-l"></i>
+
+                </button>
+            </a>
+        </div>
+        <div class="w-full md:w-4/12 mr-auto ml-auto pl-4">
+            <h3 class="text-xl mb-2 font-semibold leading-normal text-red-600 pb-2">
+        Designed for developers
+        </h3>
+            <h3 class="text-2xl mb-2 font-semibold leading-normal">
+        Establish p2p, Cryptographically Secure Communications Channels
+        </h3>
+            <p
+        class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+        >
+        Impervious enables applications and services to build on and implement the p2p internet.
+        </p>
+            <a href="https://docs.impervious.ai/">
+                <button
+                class="bg-red-600 text-white hover:bg-white hover:text-red-600 active:bg-red-800 text-sm font-bold px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-12"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+            >
+                Read the docs <i class="pl-2 fas fa-chevron-right text-l"></i>
+                </button>
+            </a>
+        </div>
+        <div class="w-full md:w-10/12 mr-auto ml-auto">
+            <img
+            alt="..."
+            src="assets/p2p_image.svg"
+            class="w-full align-middle rounded-t-lg"
+/>
+        </div>
+    </div>
+</div>
+</section>
+<section class="relative bg-gradient-to-r bg-gradient-to-b from-white via-white to-transparent">
+    <div class="container mx-auto px-4 pb-24">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-8/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h3 class="text-xl mb-2 font-semibold leading-normal text-red-600 pb-2">
+                Why Impervious
+                </h3>
+                    <h3 class="text-2xl mb-2 font-semibold leading-normal">
+                Circumventing digital intermediaries and establishing p2p data transmissions is a panacea for consumer privacy, data security, censorship resistance, and countering surveillance.
+                </h3>
+                </div>
+            </div>
+            <div class="w-full md:w-2/12 ml-auto mr-auto px-4 py-8"></div>
+            <img
+                alt="..."
+                src="assets/impervious_layers.svg"
+                class="max-w-full mx-auto"
+/>
+        </div>
+    </div>
+    <div>
+        <div class="flex flex-wrap px-24">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 pb-24">
+                <div class="px-6">
+                    <img
+                alt="..."
+                src="assets/icon-world.svg"
+                class="max-w-full mx-auto"
+                style="max-width: 100px;"
+/>
+                    <div class="pt-6 text-center">
+                        <h5 class="text-l font-bold">Censorship resistant VPN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                    <img
+                    alt="..."
+                    src="assets/icon-lock.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 100px;"
+/>
+                    <div class="pt-6">
+                        <h5 class="text-l font-bold">Censorship & surveillance resistant Encrypted messaging + payments </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                    <img
+                    alt="..."
+                    src="assets/icon-lense.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 100px;"
+/>
+                    <div class="pt-6">
+                        <h5 class="text-l font-bold">A decentralized command and control system for your network of machines</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                    <img
+                    alt="..."
+                    src="assets/icon-card.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 100px;"
+/>
+                    <div class="pt-6">
+                        <h5 class="text-l font-bold">Streaming payments for video, audio, and content streams</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="flex flex-wrap px-24 justify-center">
+            
+        </div>
+    </div>
+</section>
+<section class="pb-20 relative block bg-gray-100">
+  <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+    <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+      <polygon
+              class="text-gray-100 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+    </svg>
+  </div>
+  <div class="container mx-auto px-4 lg:pt-24 lg:pb-48">
+    <div class="flex flex-wrap mt-12 justify-center">
+      <div class="w-full lg:w-6/12 px-4 pb-8">
+        <h6 class="text-2xl mt-5 font-semibold text-gray-900 py-8">
+                Ready to get started?
+              </h6>
+        <p class="mt-2 mb-4 text-gray-500 mr-48">
+                Explore <a href="#">Impervious API Docs</a>, read our newsletter, or follow us on Twitter to track developments for the new p2p internet.
+              </p>
+        <a href="https://docs.impervious.ai/">
+          <button
+                    class="bg-red-600 text-white hover:bg-white hover:text-red-600  active:bg-red-800 text-m font-bold  px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                >
+                    Start now <i class="pl-2 fas fa-chevron-right text-l"></i>
+          </button>
+        </a>
+      </div>
+      <div class="w-full lg:w-2/12 px-4">
+        <div
+                class="text-gray-900 p-3 w-12 h-12 inline-flex items-center justify-center"
+              >
+          <i class="pl-2 fas fa-newspaper text-2xl"></i>
+        </div>
+        <h5 class="text-xl mt-5 font-semibold text-gray-900">
+                IMP NEWS
+              </h5>
+        <p class="mt-2 mb-4 text-gray-500">
+                Subscribe to our newsletter!
+              </p>
+        <a href="https://newsletter.impervious.ai">
+          <button
+                    class="text-gray-900 active:bg-gray-700 text-m font-bold py-3 rounded outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                >
+                    Newsletter <i class="pl-2 fas fa-chevron-right text-l"></i>
+          </button>
+        </a>
+      </div>
+      <div class="w-full lg:w-2/12 px-4">
+        <div
+                class="text-gray-900 p-3 w-12 h-12 inline-flex items-center justify-center"
+              >
+          <i class="pl-2 fas fa-newspaper text-2xl"></i>
+        </div>
+        <h5 class="text-xl mt-5 font-semibold text-gray-900">@ImperviousAi on Twitter!</h5>
+        <a href="https://twitter.com/imperviousai">
+          <button
+                    class="text-gray-900 active:bg-gray-700 text-m font-bold py-3 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                >
+                    Twitter <i class="pl-2 fas fa-chevron-right text-l"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+      </main>
+      <footer class="relative bg-gray-300 pt-8 pb-6">
+  <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+    <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+      <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+    </svg>
+  </div>
+  <div class="container mx-auto px-8">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-8/12 pb-8">
+        <h4 class="text-2xl font-semibold">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find us on Twitter, we respond as soon as possible.
+            </h5>
+        <div class="mt-6">
+          <a href="https://twitter.com/imperviousai">
+            <button
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+              <i class="flex fab fa-twitter"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-4/12 px-4 pt-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+            <ul class="list-unstyled">
+              <li>
+                <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/contact"
+                      >Contact Us</a
+                    >
+              </li>
+              <li>
+                <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://newsletter.impervious.ai/"
+                      >Newsletter</a
+                    >
+              </li>
+              <li>
+                <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://docs.impervious.ai/"
+                      >Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-400"/>
+    <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2022 Impervious Technologies Inc.
+            </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </body>
+    <script>
+      function toggleNavbar(collapseID) {
+        document
+          .getElementById(collapseID)
+          .classList
+          .toggle("hidden");
+        document
+          .getElementById(collapseID)
+          .classList
+          .toggle("block");
+      }
+    </script>
+  </html>
